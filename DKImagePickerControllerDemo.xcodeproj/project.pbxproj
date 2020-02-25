@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A251F85240545560043EAAF /* DKImagePickerController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5A251F84240545560043EAAF /* DKImagePickerController.podspec */; };
 		9C13DF6F1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */; };
 		9C1B8EE11E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B8EE01E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift */; };
 		9C1B8EE21E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B8EE01E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift */; };
@@ -124,6 +125,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A251F84240545560043EAAF /* DKImagePickerController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DKImagePickerController.podspec; sourceTree = "<group>"; };
 		9C13DF6E1C90490E001B0ED7 /* DKImagePickerControllerDefaultUIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKImagePickerControllerDefaultUIDelegate.swift; sourceTree = "<group>"; };
 		9C1B8EE01E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKAssetGroupCellItemProtocol.swift; sourceTree = "<group>"; };
 		9C1B8EE31E1B419900282232 /* DKAssetGroupDetailBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKAssetGroupDetailBaseCell.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		9C35CBF619DBB00700557269 = {
 			isa = PBXGroup;
 			children = (
+				5A251F84240545560043EAAF /* DKImagePickerController.podspec */,
 				9C1B8EED1E1B479000282232 /* Source */,
 				9CBF3F6A1AB15D210000F1D1 /* DKImagePickerControllerDemo */,
 				9CF72B121B8F073400238B9A /* DKImagePickerControllerDemoTests */,
@@ -577,6 +580,7 @@
 				9CBF3F7E1AB15D210000F1D1 /* Images.xcassets in Resources */,
 				9CBF3F881AB15E100000F1D1 /* Main.strings in Resources */,
 				9CBF3F851AB15DFF0000F1D1 /* Main.storyboard in Resources */,
+				5A251F85240545560043EAAF /* DKImagePickerController.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,7 +864,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 85M74MVK78;
 				INFOPLIST_FILE = DKImagePickerControllerDemo/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaozi.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -882,7 +886,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 85M74MVK78;
 				INFOPLIST_FILE = DKImagePickerControllerDemo/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaozi.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
