@@ -106,9 +106,15 @@ open class DKImagePickerControllerDefaultUIDelegate: NSObject, DKImagePickerCont
         
         let formattedMaxSelectableCount = nF.string(from: NSNumber(value: imagePickerController.maxSelectableCount))
         
-        let alert = UIAlertController(title: DKImageLocalizedStringWithKey("maxLimitReached"), message: nil, preferredStyle: .alert)
+        var alertTitle = ""
+        var alertMessage = ""
         
-        alert.message = String(format: DKImageLocalizedStringWithKey("maxLimitReachedMessage"), formattedMaxSelectableCount ?? imagePickerController.maxSelectableCount)
+        alertTitle = UserDefaults.standard.value(forKey: "Selected Language") as? String == "en" ? "Max photos limit reached" : "Max aantal foto's bereikt"
+        alertMessage = UserDefaults.standard.value(forKey: "Selected Language") as? String == "en" ? "You can select %@ items" : "Je kunt %@ items selecteren"
+        
+        let alert = UIAlertController(title: alertTitle, message: nil, preferredStyle: .alert)
+        
+        alert.message = String(format: alertMessage, formattedMaxSelectableCount ?? imagePickerController.maxSelectableCount)
         
         alert.addAction(UIAlertAction(title: DKImageLocalizedStringWithKey("ok"), style: .cancel) { _ in })
         
